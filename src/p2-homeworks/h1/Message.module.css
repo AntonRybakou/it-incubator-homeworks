@@ -1,0 +1,47 @@
+.main {
+    display: flex;
+    flex-basis: fit-content;
+    flex-flow: row wrap;
+
+    width: auto;
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.text_area {
+    display: grid;
+    grid-template-areas:
+    "n n"
+    "m t";
+    gap: 1em;
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 1fr;
+
+    padding: 10px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.name {
+    grid-area: n;
+    font-weight: bold;
+    color: mediumpurple;
+}
+
+.message {
+    grid-area: m;
+    color: white;
+}
+
+.time {
+    grid-area: t;
+    justify-self: center;
+    color: rgba(255, 255, 255, 0.2);
+}
+
