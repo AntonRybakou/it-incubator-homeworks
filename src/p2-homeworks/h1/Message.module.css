@@ -2,7 +2,6 @@
     display: flex;
     flex-basis: fit-content;
     flex-flow: row wrap;
-
     width: auto;
 }
 
@@ -18,7 +17,7 @@
     "m t";
     gap: 1em;
     grid-template-rows: auto;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: auto 40px;
 
     padding: 10px;
     margin-left: 10px;
