@@ -6,7 +6,7 @@
 }
 
 .avatar {
-    width: 80px;
+    width: 100px;
     border-radius: 50%;
 }
 
@@ -20,11 +20,20 @@
     grid-template-columns: auto 40px;
 
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+}
+
+.text_area::before {
+    content: ' ';
+    position: relative;
+    border: 10px solid transparent;
+    border-right-color: rgba(0, 0, 0, 0.8);
+    left: -30px;
+
+    width: 0px;
+    height: 0px;
 }
 
 .name {
