@@ -10,15 +10,20 @@ type MessageType = {
 
 function AlternativeMessage(props: MessageType) {
     return (
+        <div className={s.body}>
             <div className={s.main}>
-                <img src={`${props.avatar}`} className={s.avatar} alt='avatar'/>
-                <div className={s.tongue}/>
+                <div className={s.avatar}>
+                    <img src={`${props.avatar}`} alt='avatar'/>
+                    <div className={s.tongue}/>
+                </div>
                 <div className={s.text_area}>
+
                     <div className={s.name}>{props.name}</div>
                     <div className={s.message}>{props.message}</div>
                     <div className={s.time}>{props.time}</div>
                 </div>
             </div>
+        </div>
     )
 }
 

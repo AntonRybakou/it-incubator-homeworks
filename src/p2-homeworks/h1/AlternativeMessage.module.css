@@ -1,60 +1,92 @@
-.main {
-    display: flex;
-    flex-basis: fit-content;
-    flex-flow: row wrap;
-    width: auto;
+.body {
     background-color: greenyellow;
+    box-sizing: border-box;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+    "a t";
+    grid-template-columns: 130px auto;
 
 }
 
 .avatar {
+    grid-area: a;
+    place-self: end end;
+
+    z-index: 1;
+}
+
+.avatar img {
+    position: relative;
+
+    top: 45px;
+    left: 0;
+
     width: 100px;
-    border-radius: 50px;
-    background-color: chartreuse;
+    border-radius: 50%;
+    border: 10px solid greenyellow;
     z-index: 1;
 }
 
 .tongue {
-    width: 50px;
+    position: relative;
+    top: -20px;
+    left: 90px;
+
+    width: 30px;
     height: 50px;
-    left: 50px;
-    top: 115px;
-    position: absolute;
+
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
+    z-index: -1;
 }
 
 .text_area {
+    grid-area: t;
+    width: 350px;
+
     display: grid;
     grid-template-areas:
-    "n n"
-    "m t";
-    gap: 1em;
-    grid-template-rows: auto;
-    grid-template-columns: auto 40px;
+    'n n'
+    'm t';
+    gap: 10px;
+    grid-template-columns: auto 50px;
+    grid-template-rows: min-content;
 
+    margin: 20px 0;
     padding: 10px;
 
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
+    z-index: 2;
 }
 
 .name {
     grid-area: n;
+    align-self: center;
+    justify-self: start;
+
+    color: darkviolet;
     font-weight: bold;
-    color: mediumpurple;
+    font-size: 30px;
 }
 
 .message {
     grid-area: m;
+    align-self: start;
+    justify-self: start;
+
+    font-size: 20px;
     color: white;
 }
 
 .time {
     grid-area: t;
-    justify-self: center;
+    place-self: end end;
+
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.2);
 }
