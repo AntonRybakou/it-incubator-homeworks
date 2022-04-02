@@ -56,7 +56,5 @@
 .time {
     grid-area: t;
     justify-self: center;
-    position: relative;
-    top: 20px;
     color: rgba(255, 255, 255, 0.2);
 }
