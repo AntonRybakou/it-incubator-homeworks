@@ -1,29 +1,20 @@
 .main {
+    box-sizing: border-box;
     display: flex;
-    flex-basis: fit-content;
-    flex-flow: row wrap;
-    width: auto;
-    background-color: greenyellow;
-
+    align-items: flex-end;
+    margin: 20px;
 }
 
 .avatar {
-    padding: 10px 10px 10px 10px;
-    width: 100px;
-    border-radius: 70px;
-    z-index: 2;
-    background-color: greenyellow;
-    border: 10px solid greenyellow;
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .tongue {
-    width: 50px;
-    height: 50px;
-    left: 90px;
-    top: 135px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
+    min-width: 50px;
+    min-height: 50px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 50px, rgba(0, 0, 0, 0.8) 0);
 }
 
 .text_area {
@@ -31,18 +22,16 @@
     grid-template-areas:
     "n n"
     "m t";
-    gap: 1em;
+    gap: 5px;
     grid-template-rows: auto;
     grid-template-columns: auto 40px;
-
+    width: 300px;
+    min-height: 80px;
     padding: 10px;
-    margin: 20px 0;
-
     background-color: rgba(0, 0, 0, 0.8);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 .name {
@@ -58,8 +47,7 @@
 
 .time {
     grid-area: t;
-    justify-self: center;
-    position: relative;
-    top: 20px;
-    color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-self: flex-end;
+    color: rgba(255, 255, 255, 0.3);
 }
