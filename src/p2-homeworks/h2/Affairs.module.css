@@ -1,3 +1,31 @@
-.someClass {
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    max-width: 400px;
+}
 
+.button {
+    margin: auto 5px;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.low {
+    margin: auto 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+.middle {
+    margin: auto 5px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+.high {
+    margin: auto 5px;
+    border-radius: 5px;
+    background-color: red;
 }
