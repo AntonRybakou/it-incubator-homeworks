@@ -8,22 +8,18 @@
     grid-template-areas:
     "a t";
     grid-template-columns: 130px auto;
-
 }
 
 .avatar {
     grid-area: a;
     place-self: end end;
-
     z-index: 1;
 }
 
 .avatar img {
     position: relative;
-
     top: 45px;
     left: 0;
-
     width: 100px;
     border-radius: 50%;
     border: 10px solid greenyellow;
@@ -34,10 +30,8 @@
     position: relative;
     top: -20px;
     left: 90px;
-
     width: 30px;
     height: 50px;
-
     background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
@@ -45,7 +39,6 @@
 .text_area {
     grid-area: t;
     width: 350px;
-
     display: grid;
     grid-template-areas:
     'n n'
@@ -53,10 +46,8 @@
     gap: 10px;
     grid-template-columns: auto 50px;
     grid-template-rows: min-content;
-
     margin: 20px 0;
     padding: 10px;
-
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -68,7 +59,6 @@
     grid-area: n;
     align-self: center;
     justify-self: start;
-
     color: darkviolet;
     font-weight: bold;
     font-size: 30px;
@@ -78,7 +68,6 @@
     grid-area: m;
     align-self: start;
     justify-self: start;
-
     font-size: 20px;
     color: white;
 }
@@ -86,7 +75,6 @@
 .time {
     grid-area: t;
     place-self: end end;
-
     font-size: 20px;
     color: rgba(255, 255, 255, 0.2);
 }

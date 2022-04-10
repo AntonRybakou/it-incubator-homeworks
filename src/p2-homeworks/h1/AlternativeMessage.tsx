@@ -13,7 +13,7 @@ function AlternativeMessage(props: MessageType) {
         <div className={s.body}>
             <div className={s.main}>
                 <div className={s.avatar}>
-                    <img src={`${props.avatar}`} alt='avatar'/>
+                    <img src={props.avatar} alt='avatar'/>
                     <div className={s.tongue}/>
                 </div>
                 <div className={s.text_area}>
