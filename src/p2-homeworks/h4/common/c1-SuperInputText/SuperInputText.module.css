@@ -1,9 +1,10 @@
 .superInput {
-
+    border: 2px solid black;
+    background: #a5def1;
 }
 
 .errorInput {
-    border: 3px solid lime;
+    border: 2px solid lime;
     background: red;
 }
 

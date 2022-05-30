@@ -1,5 +1,28 @@
-.default {
+button {
+    color: var(--color);
+    transition: 0.5s;
+}
+button:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
 
+.default {
+    --hover: #66c887;
+    transition: 0.5s;
+}
+
+.default:hover,
+.default:focus {
+    border-color: var(--hover);
+    color: #fff;
+    box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.default:disabled {
+    --color: #ccc;
+    --hover: #ccc;
+    transition: none;
 }
 
 .red {
